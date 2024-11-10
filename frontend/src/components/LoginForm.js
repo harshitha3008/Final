@@ -12,7 +12,7 @@ const LoginForm = ({ setUserAuthenticated, closeModal }) => { // Added closeModa
 
     try {
       // Send login request to backend
-      const response = await axios.post('http://localhost:5000/api/auth/login', { username, password });
+      const response = await axios.post('https://final-backend-2v7j.onrender.com/api/auth/login', { username, password });
       
       // On success, update the navbar to show "My Profile" and hide login/register buttons
       setUserAuthenticated(true);
