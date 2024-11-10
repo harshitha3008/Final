@@ -20,6 +20,8 @@ app.use(cors(
   }
 ));
 
+app.get("/", (req, res) => res.send("Hello World"));
+
 // Debugging: Check if the URI is loaded
 console.log("MongoDB URI:", process.env.MONGODB_URI);
 
